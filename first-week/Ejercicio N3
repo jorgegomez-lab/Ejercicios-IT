@@ -1,16 +1,13 @@
-Paso 2: Explorar la estructura del repositorio
+Challenge 2: Forking and Pull Requests
+Paso 1: Crear un fork
+Cree un fork del repositorio en tu cuenta de GitHub.
+Estado: Cumplido.
 
-Revise las carpetas y archivos del repositorio.
+Paso 2: Modificar un archivo
+Realice cambios en el archivo README.md y trabajaste con diferentes ramas.
 
-Entre ellos se encontraban:
+Paso 3: Crear un Pull Request
+Subi la rama ramajorge a GitHub con:
+git push origin ramajorge
 
-.gitignore
-evidencias
-first_week
-five_week
-fourth_week
-LICENSE
-README.md
-seventh_week
-six_week
-third_week
+Después cree el Pull Request hacia la rama software-engineering del repositorio principal.
