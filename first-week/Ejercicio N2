@@ -1,1 +1,3 @@
-
+Paso 1: Clonar el repositorio
+git clone -b software-engineering https://github.com/ON-THE-FUZE/software-team-training-path/
+Esto permitió descargar el repositorio utilizando la rama software-engineering.
