@@ -1,1 +1,40 @@
+Challenge 4: Conflict Resolution
+Paso 1: Crear una rama
+Cree una rama para trabajar con los cambios:
+git checkout -b conflicto-jorge
 
+Paso 2: Realizar cambios conflictivos
+Realice cambios diferentes en las ramas Errorcausado y ramajorge.
+En Errorcausado ejecutaste:
+echo Cambio realizado desde Errorcausado>>README.md
+git add README.md
+git commit -m "Cambio en Errorcausado"
+
+En ramajorge ejecute:
+echo Cambio realizado desde ramajorge>README.md
+git add README.md
+git commit -m "Cambio en ramajorge"
+
+Paso 3: Crear la carpeta de evidencias
+Cree la carpeta:
+evidencias
+Y guarde dentro la imagen:
+evidencias/evidencias de conflicto.png
+
+Paso 4: Intentar unir las ramas
+Ejecute:
+git merge Errorcausado
+
+Esto produjo un conflicto en el archivo README.md.
+
+Paso 5: Resolver el conflicto
+
+Reemplace el contenido del archivo y agregaste la solución:
+git add README.md
+git commit -m "Resolver conflicto entre ramas"
+
+Paso 6: Subir los cambios a GitHub
+Ejecute:
+git push origin ramajorge
+
+Esto subió la solución y la evidencia a GitHub.
