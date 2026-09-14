@@ -1,1 +1,11 @@
+Challenge 3: Branch Review
+Paso 1: Revisar el historial de commits
+Utilice:
+git log --oneline --all --graph
+Este comando permitió revisar el historial de commits y observar las diferentes ramas.
 
+Paso 2: Cambiar a otra rama
+Utilice:
+git checkout Errorcausado
+
+Esto permitió cambiar de la rama ramajorge a la rama Errorcausado.
