@@ -1,3 +1,20 @@
+Challenge 1: Cloning and Branching
 Paso 1: Clonar el repositorio
+
+Ejecute:
 git clone -b software-engineering https://github.com/ON-THE-FUZE/software-team-training-path/
 Esto permitió descargar el repositorio utilizando la rama software-engineering.
+
+Paso 2: Explorar la estructura del repositorio
+Revise las carpetas y archivos del repositorio.
+Entre ellos se encontraban:
+.gitignore
+evidencias
+first_week
+five_week
+fourth_week
+LICENSE
+README.md
+seventh_week
+six_week
+third_week
