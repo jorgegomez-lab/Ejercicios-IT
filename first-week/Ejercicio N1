@@ -24,3 +24,34 @@ C:.
 │ └───assets
 ├───six_week
 └───third_week
+Paso 3.
+ Revisar las ramas
+En este paso ejecutamos: git branch
+
+Este comando nos mostró las ramas que existen en nuestro repositorio local:
+
+  Errorcausado
+* conflicto-jorge
+  main
+  ramajorge
+  software-engineering
+
+## Descripción
+
+En este ejercicio se trabajó con las ramas `Errorcausado` y `ramajorge` para practicar la creación y resolución de conflictos en Git.
+
+Actividades realizadas:
+* Se realizaron cambios en el archivo `README.md` desde la rama `Errorcausado`.
+* Se realizaron cambios diferentes en el mismo archivo desde la rama `ramajorge`.
+* Se ejecutó el comando `git merge Errorcausado`.
+* Git detectó un conflicto de contenido en `README.md`.
+* Se revisaron las marcas del conflicto:
+* `<<<<<<< HEAD`
+* `=======`
+ * `>>>>>>> Errorcausado`
+* Se resolvió el conflicto dejando una versión final limpia del archivo.
+* Se confirmó la solución mediante un commit.
+* Se agregó la imagen de evidencia en la carpeta `evidencias`.
+
+Resultado
+El conflicto fue resuelto correctamente y los cambios fueron enviados a la rama `ramajorge` del repositorio remoto.
