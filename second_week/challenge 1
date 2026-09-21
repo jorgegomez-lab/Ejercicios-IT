@@ -1,1 +1,7 @@
+from collections import Counter #counter es la herramienta para contar cuantas veces se repite algo 
 
+def most_common_word(words: list[str]) -> tuple[str,int]:
+    counter = Counter(words)
+    return counter.most_common(1)[0]
+words = ['Daniel', 'Jorge', 'Jorge', 'Andres', 'Jorge', 'Francisco']
+print(most_common_word(words))
