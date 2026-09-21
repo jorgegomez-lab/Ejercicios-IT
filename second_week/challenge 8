@@ -1,0 +1,14 @@
+from datetime import datetime
+
+
+def date_difference(date1: str, date2: str) -> int:
+    try:
+        fecha1 = datetime.strptime(date1, "%Y-%m-%d")
+        fecha2 = datetime.strptime(date2, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError("Las fechas deben tener el formato YYYY-MM-DD")
+
+    return abs((fecha1 - fecha2).days)
+
+
+print(date_difference("2026-09-17", "2026-09-10"))
