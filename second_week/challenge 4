@@ -1,0 +1,28 @@
+from typing import Generator
+
+
+def es_primo(numero):
+    if numero < 2:
+        return False
+
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            return False
+
+    return True
+
+
+def prime_generator() -> Generator[int, None, None]:
+    numero = 2
+
+    while True:
+        if es_primo(numero):
+            yield numero
+
+        numero += 1
+
+
+primos = prime_generator()
+
+for _ in range(10):
+    print(next(primos))
