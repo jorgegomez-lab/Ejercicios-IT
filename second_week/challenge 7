@@ -1,0 +1,21 @@
+import os
+
+
+def create_and_list_dir(dir_path: str) -> list[str]:
+    os.makedirs(dir_path, exist_ok=True)
+
+    archivos = []
+
+    for nombre in os.listdir(dir_path):
+        ruta = os.path.join(dir_path, nombre)
+
+        if os.path.isdir(ruta):
+            archivos.extend(create_and_list_dir(ruta))
+
+        elif os.path.isfile(ruta):
+            archivos.append(ruta)
+
+    return archivos
+
+
+print(create_and_list_dir("mi_carpeta"))
