@@ -1,0 +1,20 @@
+def file_stats(filepath: str) -> dict[str, int]:
+    with open(filepath, "r", encoding="utf-8") as archivo:
+        contenido = archivo.read()
+
+    lines = len(contenido.splitlines())
+    words = len(contenido.split())
+    characters = len(contenido)
+
+    return {
+        "lines": lines,
+        "words": words,
+        "characters": characters
+    }
+
+
+with open("texto.txt", "w", encoding="utf-8") as archivo:
+    archivo.write("Hola mundo\nPython es genial")
+
+
+print(file_stats("texto.txt"))
