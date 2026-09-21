@@ -1,0 +1,10 @@
+personas = [
+    {'nombre': 'Carlos', 'edad': 30},
+    {'nombre': 'Laura', 'edad': 19},
+    {'nombre': 'Luisa', 'edad': 20},
+]
+
+def ordenar_por_clave(datos, clave, clave_secundaria=''):
+    if clave_secundaria:
+        return sorted(datos, key=lambda persona: persona[clave])
+print(ordenar_por_clave(personas, 'edad', 'nombre'))
