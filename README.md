@@ -1,1 +1,1 @@
-# Ejercicios-IT
+Repsitorio Entrenamiento
