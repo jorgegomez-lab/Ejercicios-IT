@@ -1,1 +1,7 @@
-a
+def my_reversed(word: str) -> str:
+    resultado = ""
+
+    for i in range(len(word)):
+        resultado += word[-(i + 1)]
+    return resultado 
+print(my_reversed("jsdfgkldfjglkdfjgkljdfklgkldfj"))
