@@ -1,1 +1,15 @@
+def palindrome(possible_palindrome: str) -> bool:
+
+    texto_limpio = ""
+
+    for caracter in possible_palindrome:
+
+        if caracter.isalnum():
+
+            texto_limpio += caracter.lower()
+
+    return texto_limpio == texto_limpio[::-1]
+
+print(palindrome('anita la bananita'))
+print(palindrome('compita'))
 
