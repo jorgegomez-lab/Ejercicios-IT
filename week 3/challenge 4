@@ -1,0 +1,24 @@
+def format_phone(phone_number: str, country: str) -> tuple[str, str]:
+
+    partes = phone_number.split(" ext ")
+
+    telefono = partes[0]
+    ext = "ext " + partes[1]
+
+    telefono = telefono.replace("-", "")
+
+    telefono = telefono.lstrip("0")
+
+    if country == "Colombia":
+        codigo = "57"
+    elif country == "Brasil":
+        codigo = "55"
+
+    telefono = telefono[:4] + " " + telefono[4:]
+
+    telefono = "(+" + codigo + ") " + telefono
+
+    return telefono, ext
+
+
+print(format_phone("0-080-456-730 ext 88", "Colombia"))
