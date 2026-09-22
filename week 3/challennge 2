@@ -1,1 +1,15 @@
 
+def how_many(palabra: str) -> tuple[int, int]:
+    
+    vocales = 0
+    consonantes = 0
+    for letra in palabra:
+        if letra.isalpha():
+            if letra.lower() in "aeiou":
+                vocales += 1
+            else: 
+                consonantes += 1
+    return vocales, consonantes 
+print(how_many("ho1a113!"))
+
+print(how_many("daniel7272Joehesgb"))
